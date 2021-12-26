@@ -1,0 +1,31 @@
+main {
+  position: relative;
+  height: 90vh;
+}
+p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: hsl(var(--hue, 343), 100%, 60%);
+  width: 4vmin;
+  height: 4vmin;
+  transform: translate(var(--a), var(--b)) scale(var(--c));
+  mix-blend-mode: screen;
+  border-radius: 50%;
+  /* clip-path: polygon(50% 0%, 90% 100%, 10% 100%); */
+}
+* {
+  margin: 0;
+  box-sizing: bor;
+}
+svg {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+body {
+  background: hsl(0, 0%, 0%);
+  height: 100vh;
+  overflow: hidden;
+}
